@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 .space-buttons {
     flex: 1 1 auto;
+}
+
+mat-toolbar {
+    background-color: #faf6ed;
+    color: #5cb25d;
+    font-family: 'Dancing Script', cursive;
+    padding: 0 3rem;
+}
+
+.btn-custom:hover {
+    background-color: #5cb25d !important;
+}
+
+.btn-custom {
+    font-size: 1rem;
+    color: black;
+}
+
+.logo {
+    color: #5cb25d;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+.icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bg-nav {
+    background-color: #faf6ed !important;
 }

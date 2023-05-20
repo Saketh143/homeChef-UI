@@ -18,3 +18,15 @@ mat-grid-tile {
     right: 0;
     margin: auto;
 }
+
+.bg-home {
+    background-color: #5cb25d;;
+}
+
+mat-form-field {
+    color: white !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    color: #fff !important;
+}

@@ -1,16 +1,28 @@
-<div class="container mt-5">
-
-   <mat-form-field appearance="outline" class="w-100">
-      <mat-label>Search any product</mat-label>
+<!-- Jumbotron -->
+<div class="bg-home text-white py-5">
+   <div class="container py-5">
+     <h1>
+       Top Notch &<br />
+       Qualified Cheffs
+     </h1>
+     <p>
+       Diverse cuisines, Homely food, Excellent Service
+     </p>
+     <mat-form-field appearance="outline" class="w-100">
+      <mat-label>Search any cuisine</mat-label>
       <input matInput
              #searchkeyword
              (keyup)="searchByKeyword(searchkeyword.value)"
              name="searchKey"
              id="searchKey"
              placeholder="Search any product">
-      <mat-hint>Search any product</mat-hint>
+      <mat-hint>Search any cuisine</mat-hint>
   </mat-form-field>
+   </div>
+ </div>
+ <!-- Jumbotron -->
 
+<div class="container mt-5">
    <mat-grid-list cols="4" rowHeight="3:5" gutterSize="10">
       <mat-grid-tile *ngFor="let p of productDetails">
          <div class="row p-5">
@@ -24,7 +36,7 @@
                <p style="white-space: inherit; height: 40px; width: 288px; overflow: hidden; text-overflow: ellipsis;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sed eaque molestias iste repudiandae in quos distinctio rem excepturi expedita incidunt, doloremque id sequi perferendis ipsum. Maxime ad iste eius.</p>
             </div>
             <div class="mt-2">
-              <b>Rs. {{p.productDiscountedPrice}}</b> &nbsp;  <b style="text-decoration: line-through;">{{p.productActualPrice}}</b>
+              <b>$ {{p.productDiscountedPrice}}</b> &nbsp;  <b style="text-decoration: line-through;">{{p.productActualPrice}}</b>
             </div>
             <div class="mt-2">
                <button type="button" mat-raised-button color="warn" (click)="showProductDetails(p.productId)">View Details</button>
